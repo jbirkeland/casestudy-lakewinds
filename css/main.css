@@ -104,6 +104,51 @@ html {
     box-sizing: inherit;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Neuton', serif;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.top-of-page-nav {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+
+.top-of-page-nav a {
+    color: #76743e;
+}
+
+.top-of-page-nav ul{
+    list-style-type: none;
+    float: right;
+    top: 0;
+}
+
+.top-of-page-nav li{
+    display: inline-block;
+}
+
+header {
+    margin-top: 4.8125em;
+    border: 10px solid black;
+    background-image: url(img/ProduceDepartment-1024x768.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
 
 
 
