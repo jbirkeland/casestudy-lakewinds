@@ -195,6 +195,33 @@ nav a {
     font-size: 1em;
 }
 
+.divider-icon {
+    width: 3em;
+    margin: auto;
+}
+
+.blog-1 {
+    float: left;
+    width: 50%;
+}
+
+.blog-2 {
+    float: right;
+    width: 50%;
+}
+
+.deals {
+    clear: both;
+}
+
+.newsletter-form {
+    width: 100%;
+    background-color: #888;
+    margin: auto;
+    text-align: center;
+    padding: 5em;
+}
+
 .membership-details {
     margin: 0 15px;
 }
@@ -225,6 +252,8 @@ footer {
     margin: auto;
     text-align: center;
     position: relative;
+    line-height: 2em;
+    padding: 3em;
 }
 
 footer h2 {
