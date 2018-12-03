@@ -114,38 +114,167 @@ body {
 }
 
 nav a {
-    text-decoration: none;
-}
-
-.top-of-page-nav {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     width: 100%;
+}
+
+.top-of-page-nav {
     position: relative;
 }
 
 .top-of-page-nav a {
     color: #76743e;
+    text-decoration: none;
+}
+
+.top-of-page-nav a:hover {
+    color: #656536;
+    text-decoration: underline;
 }
 
 .top-of-page-nav ul{
     list-style-type: none;
     float: right;
-    top: 0;
 }
 
 .top-of-page-nav li{
     display: inline-block;
+    padding: 2em 1em;
 }
 
-header {
-    margin-top: 4.8125em;
-    border: 10px solid black;
-    background-image: url(img/ProduceDepartment-1024x768.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+.main-heading {
+    margin: 135px 0 0;
+    clear: both;
+    border: 1px solid black;
+    background-color: #888;
+    width: 100%;
+    position: relative;
 }
+
+.main-heading img {
+    padding: 1em;
+    background-color: #fff;
+    width: 20%;
+}
+
+.header-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-nav a {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.header-nav li {
+    padding: 1.5em 3em;
+    display: inline-block;
+}
+
+.main-heading-tagline {
+    position: absolute;
+    color: #fff;
+}
+
+.main-heading-tagline a {
+    color: #76743e;
+    font-size: 1em;
+}
+
+.membership-details {
+    margin: 0 15px;
+}
+
+.membership-details ul {
+    margin: 0 15px;
+}
+
+.learn-more-about-becoming-an-owner-button {
+    background-color: #76743e;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1em;
+}
+
+.learn-more-about-becoming-an-owner-button a {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+footer h2 {
+    display: none;
+}
+
+footer a {
+    color: #76743e;
+}
+
+footer img {
+    width: 15%;
+}
+
+.social-icons ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-icons li {
+    padding: 2em 1em;
+    display: inline-block;
+}
+
+.social-icons i {
+    font-size: 3em;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-nav li {
+    padding: 2em 1em;
+    display: inline-block;
+}
+
+.footer-nav a {
+    color: #76743e;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #656536;
+    text-decoration: underline;
+}
+
+
+
 
 
 
