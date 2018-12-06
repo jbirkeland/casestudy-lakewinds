@@ -117,7 +117,7 @@ body {
 nav a {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
 }
 
@@ -232,6 +232,8 @@ nav a {
 .store-locations-container {
     display: flex;
     background-color: #f6f6f6;
+    position: relative;
+    z-index: -20;
 }
 
 .store-locations-container h2 {
@@ -245,21 +247,36 @@ nav a {
     position: relative;
 }
 
+.store-photo {
+    background-color: rgba(86, 82, 90, 0.7);
+}
+
 .store-background {
     width: 100%;
     position: relative;
+    z-index: -10;
 }
 
 .city-state {
     position: absolute;
     text-align: center;
     color: #fff;
-    width: 357px;
-    height: 199px;
-    top: 50%;
     left: 50%;
+    top: 24%;
     transform: translate(-50%,-50%);
-    z-index: 100;
+}
+
+.city-state h3 {
+    font-size: 2.25em;
+    font-weight: normal;
+}
+
+.city-state p {
+    font-family: 'Quicksand', serif;
+    font-size: .9em;
+    padding-top: .75em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .store-details {
@@ -271,9 +288,9 @@ nav a {
     list-style-type: none;
     text-align: center;
     margin: 0 20px;
-    padding: 1em;
+    padding: 1.05em;
     color: #444;
-    font-size: 1em;
+    font-size: 1.15em;
 }
 
 .store-details a {
@@ -421,10 +438,69 @@ nav a {
 
 .newsletter-form {
     width: 100%;
-    background-color: #888;
     margin: auto;
     text-align: center;
-    padding: 5em;
+    position: relative;
+    padding-top: 5em;
+}
+
+.newsletter-title {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.newsletter-form h2 {
+    font-size: 2.25em;
+    color: #fff;
+    font-weight: normal;
+}
+
+.newsletter-tagline {
+    text-transform: uppercase;
+    font-size: .9em;
+    color: #fff;
+}
+
+.newsletter-background-image {
+    width: 100%;
+    left: 0;
+    padding: 0;
+    z-index: -10;
+    position: relative;
+}
+
+.newsletter-boxes {
+    display: flex;
+    margin: -9em auto;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.newsletter-boxes input {
+    width: 15%;
+    padding: .6em;
+    border-radius: 5px;
+    border: none;
+    color: #444;
+}
+
+.newsletter-boxes select {
+    color: #444;
+}
+
+.subscribe input {
+    color: #fff;
+    background-color: #dc4d63;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1em 3.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* start footer section */
@@ -435,7 +511,7 @@ footer {
     text-align: center;
     position: relative;
     line-height: 2em;
-    padding: 3em;
+    padding: 20em 3em;
 }
 
 footer h2 {
@@ -456,7 +532,7 @@ footer img {
 }
 
 .social-icons li {
-    padding: 2em 1em;
+    padding: 2em .5em;
     display: inline-block;
 }
 
