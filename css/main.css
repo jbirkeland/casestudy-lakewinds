@@ -112,6 +112,7 @@ html {
 body {
     font-family: 'Neuton', serif;
     max-width: 1200px;
+    min-width: 900px;
 }
 
 nav a {
@@ -123,6 +124,7 @@ nav a {
 
 .top-of-page-nav {
     position: relative;
+    padding: 2.5em;
 }
 
 .top-of-page-nav a {
@@ -137,21 +139,29 @@ nav a {
 
 .top-of-page-nav ul{
     list-style-type: none;
-    float: right;
+    position: absolute;
+    right: 5%;
+    top: 40%;
 }
 
 .top-of-page-nav li{
     display: inline-block;
-    padding: 2em 1em;
+    padding: 0 1em;
     letter-spacing: 1px;
+}
+
+.top-of-page-nav img {
+    position: absolute;
+    right: 4.5%;
+    top: 45%;
+    width: 1.2%;
 }
 
 /* start heading section */
 
 .main-heading {
     background-color: rgba(131, 106, 145, 0.4);
-    margin: 135px 0 0;
-    clear: both;
+    margin: 0;
     width: 100%;
     height: 39.5em;
     position: relative;
@@ -244,6 +254,7 @@ nav a {
     background-color: #f6f6f6;
     position: relative;
     z-index: -20;
+    cursor: pointer;
 }
 
 .store-locations-container h2 {
@@ -252,6 +263,7 @@ nav a {
 
 .store-location {
     width: 33.333333%;
+    min-width: 300px;
     justify-content: space-around;
     padding: 2em 1em;
     position: relative;
@@ -315,12 +327,26 @@ nav a {
     text-decoration: none;
 }
 
+.address img {
+    width: 3.5%;
+    margin: -5px 5px 0;
+}
+
 .phone {
     border-bottom: 1px solid #ddd;
 }
 
 .hours {
     border-bottom: 1px solid #ddd;
+}
+
+.hours img {
+    width: 7%;
+    margin: -5px 5px 0;
+}
+
+.take-out-options a:hover {
+    color: #656536;
 }
 
 /* start blog post section */
@@ -357,11 +383,6 @@ nav a {
     width: 100%;
 }
 
-.blog-post h3 a {
-    color: #76743e;
-    font-weight: normal;
-}
-
 .blog-post h3 {
     font-size: 2em;
     font-weight: normal;
@@ -371,6 +392,10 @@ nav a {
 
 .blog-post a {
     color: #76743e;
+}
+
+.blog-post a:hover {
+    color: #656536
 }
 
 .blog-post p {
@@ -394,6 +419,10 @@ nav a {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
+}
+
+.learn-more-button:hover {
+    background-color: #656536;
 }
 
 .event-description {
@@ -508,6 +537,10 @@ nav a {
     color: #fff;
 }
 
+.view-more-deals-button:hover {
+    background-color: #c72840;
+}
+
 /* start membership section */
 
 .membership-details {
@@ -517,21 +550,23 @@ nav a {
 
 .membership-details ul {
     margin: 0 1.25em;
-    line-height: 2.75em;
+    line-height: 1.6em;
+    width: 360px;
 }
 
 .membership-details li {
     font-size: 1.15em;
+    padding-bottom: 1em;
 }
 
 .membership-details h2 {
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2.25em;
     padding-bottom: .35em;
 }
 
 .membership-tagline {
-    padding: 1em 0;
+    padding-bottom: 1em;
 }
 
 .learn-more-about-becoming-an-owner-button {
@@ -545,10 +580,14 @@ nav a {
 .learn-more-about-becoming-an-owner-button a {
     color: #fff;
     font-size: .9em;
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
+}
+
+.learn-more-about-becoming-an-owner-button:hover {
+    background-color: #656536;
 }
 
 /* start newsletter section */
@@ -559,19 +598,21 @@ nav a {
     margin: auto;
     text-align: center;
     position: relative;
-    padding-top: 5em;
-    background-image: url(../img/cabbage_1200x320.jpg);
 }
 
 .newsletter-title {
     left: 50%;
-    top: 40%;
+    top: 35%;
     transform: translate(-50%,-50%);
     position: absolute;
     z-index: 10;
 }
 
 .newsletter-form h2 {
+    display: none;
+}
+
+.newsletter-form h3 {
     font-size: 2.25em;
     color: #fff;
     font-weight: normal;
@@ -585,14 +626,17 @@ nav a {
 
 .newsletter-boxes {
     display: flex;
-    margin: 6em auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     justify-content: space-around;
     width: 80%;
 }
 
 .newsletter-boxes input {
     width: 15%;
-    padding: .6em;
+    padding: .5em;
     border-radius: 5px;
     border: none;
     color: #444;
@@ -608,11 +652,16 @@ nav a {
     border: none;
     border-radius: 5px;
     width: 100%;
-    padding: 1em 3.5em;
+    padding: .75em 3.5em;
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+.subscribe input:hover {
+    background-color: #c72840;
+    cursor: pointer;
 }
 
 /* start footer section */
@@ -635,6 +684,10 @@ footer a {
     color: #76743e;
 }
 
+footer a:hover {
+    color: #656536;
+}
+
 footer img {
     width: 15%;
 }
@@ -645,12 +698,12 @@ footer img {
 }
 
 .social-icons li {
-    padding: 4em .5em 1.5em;
+    padding: 4em .35em 1.5em;
     display: inline-block;
 }
 
 .social-icons i {
-    font-size: 3em;
+    font-size: 3.25em;
 }
 
 .footer-nav ul {
@@ -664,12 +717,12 @@ footer img {
 }
 
 .footer-nav a {
-    color: #76743e;
     text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .footer-nav a:hover {
-    color: #656536;
     text-decoration: underline;
 }
 
@@ -677,22 +730,6 @@ footer img {
     padding-top: 3em;
     font-size: 1.15em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
