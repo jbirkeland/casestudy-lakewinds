@@ -150,11 +150,15 @@ nav a {
     letter-spacing: 1px;
 }
 
-.top-of-page-nav img {
+.magnifying-glass {
     position: absolute;
     right: 4.5%;
     top: 45%;
     width: 1.2%;
+}
+
+.class {
+    text-decoration: underline;
 }
 
 /* start heading section */
@@ -163,8 +167,12 @@ nav a {
     background-color: rgba(131, 106, 145, 0.4);
     margin: 0;
     width: 100%;
-    height: 39.5em;
+    height: 78px;
     position: relative;
+}
+
+.main-heading h1 {
+    display: none;
 }
 
 .header-image {
@@ -174,24 +182,6 @@ nav a {
     position: absolute;
 }
 
-.main-heading-white-circle {
-    position: absolute;
-    background-color: #fff;
-    width: 16.5em;
-    height: 16.5em;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-}
-
-.main-heading-logo {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%,-50%);
-    width: 15%;
-}
 
 .header-nav {
     position: absolute;
@@ -247,354 +237,12 @@ nav a {
     border-bottom: 1px solid #f7dca4;
 }
 
-/* start store location section */
-
-.store-locations-container {
-    display: flex;
-    background-color: #f6f6f6;
-    position: relative;
-}
-
-.store-locations-container h2 {
-    display: none;
-}
-
-.store-location {
-    width: 33.333333%;
-    min-width: 300px;
-    justify-content: space-around;
-    padding: 2em 1em;
-    position: relative;
-}
-
-.store-background {
-    width: 100%;
-    position: relative;
-    opacity: .7;
-}
-
-.city-state {
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    left: 50%;
-    top: 24%;
-    transform: translate(-50%,-50%);
-    z-index: 3;
-}
-
-.city-state h3 {
-    font-size: 2.25em;
-    font-weight: normal;
-}
-
-.city-state p {
-    font-family: 'Quicksand', serif;
-    font-size: .9em;
-    padding-top: .75em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.store-details {
-    background-color: #fff;
-    line-height: 1.625em;
-}
-
-.store-details li {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 20px;
-    padding: 1.05em;
-    color: #444;
-    font-size: 1.15em;
-}
-
-.store-details a {
-    color: #76743e;
-}
-
-.address {
-    border-bottom: 1px solid #ddd;
-}
-
-.address a {
-    text-decoration: none;
-}
-
-.address img {
-    width: 3.5%;
-    margin: -5px 5px 0;
-}
-
-.phone {
-    border-bottom: 1px solid #ddd;
-}
-
-.hours {
-    border-bottom: 1px solid #ddd;
-}
-
-.hours img {
-    width: 7%;
-    margin: -5px 5px 0;
-}
-
-.take-out-options a:hover {
-    color: #656536;
-}
-
-/* start blog post section */
-
-.blog-section {
-    text-align: center;
-    padding-bottom: 6em;
-}
-
-.blog-section h2 {
-    display: none;
-}
-
-.divider-icon {
-    width: 2.5em;
-    margin: 3.75em;
-}
-
-.blog-posts-container {
-    display: flex;
-}
-
-.blog-post {
-    justify-content: space-around;
-    width: 50%;
-    padding: 0 1em;
-    text-align: left;
-    font-size: 1.15em;
-    color: #444;
-    line-height: 1.5em;
-}
-
-.blog-pic {
-    width: 100%;
-}
-
-.blog-post h3 {
-    font-size: 2em;
-    font-weight: normal;
-    color: #444;
-    padding: .75em 0;
-}
-
-.blog-post a {
-    color: #76743e;
-}
-
-.blog-post a:hover {
-    color: #656536
-}
-
-.blog-post p {
-    padding: .5em 0;
-}
-
-.learn-more-button {
-    background-color: #76743e;
-    border: none;
-    border-radius: 3px;
-    display: inline-block;
-    padding: .5em 1em;
-    margin-top: .75em;
-    line-height: 0;
-}
-
-.learn-more-button a {
-    color: #fff;
-    font-size: .85em;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
-}
-
-.learn-more-button:hover {
-    background-color: #656536;
-}
-
-.event-description {
-    text-transform: uppercase;
-    font-size: .9em;
-}
-
-.event-date {
-    font-weight: bold;
-}
-
-.specific-date-information {
-    font-style: italic;
-}
-
-/* start deals section */
-
-.deals {
-    clear: both;
-    width: 100%;
-    position: relative;
-}
-
-.deals h2 {
-    display: none;
-}
-
-.deals-background-image {
-    opacity: .8;
-}
-
-.white-circle-1 {
-    position: absolute;
-    border-radius: 50%;
-    width: 11em;
-    height: 11em;
-    left: 15%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #fff;
-    z-index: 1;
-}
-
-.deal-1 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: .9em;
-    font-family: 'Quicksand', sans-serif;
-    left: 15%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-    color: #6f1e23;
-    text-align: center;
-    z-index: 2;
-}
-
-.flower-icon {
-    position: absolute;
-    left: 15%;
-    top: 60%;
-    width: 3em;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-}
-
-.white-circle-2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 11em;
-    height: 11em;
-    left: 40%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #fff;
-    z-index: 1;
-}
-
-.deal-2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: .9em;
-    font-family: 'Quicksand', sans-serif;
-    left: 40%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-    color: #6f1e23;
-    text-align: center;
-    z-index: 2;
-}
-
-.heart-icon {
-    position: absolute;
-    left: 40%;
-    top: 60%;
-    width: 4em;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-}
-
-.view-more-deals-button {
-    position: absolute;
-    background-color: #dc4d63;
-    right: 15%;
-    top: 40%;
-    border: none;
-    border-radius: 5px;
-    padding: .65em 1em;
-    font-size: .9em;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.view-more-deals-button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.view-more-deals-button:hover {
-    background-color: #c72840;
-}
-
-/* start membership section */
-
-.membership-details {
-    margin: 6em;
-    color: #444;
-}
-
-.membership-details ul {
-    margin: 0 1.25em;
-    line-height: 1.6em;
-    width: 360px;
-}
-
-.membership-details li {
-    font-size: 1.15em;
-    padding-bottom: 1em;
-}
-
-.membership-details h2 {
-    font-weight: normal;
-    font-size: 2.25em;
-    padding-bottom: .35em;
-}
-
-.membership-tagline {
-    padding-bottom: 1em;
-}
-
-.learn-more-about-becoming-an-owner-button {
-    background-color: #76743e;
-    border: none;
-    border-radius: 3px;
-    display: inline-block;
-    padding: .5em .75em;
-}
-
-.learn-more-about-becoming-an-owner-button a {
-    color: #fff;
-    font-size: .9em;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-}
-
-.learn-more-about-becoming-an-owner-button:hover {
-    background-color: #656536;
-}
-
 /* start newsletter section */
 
 .newsletter-form {
     width: 100%;
     height: 20em;
-    margin: auto;
+    margin: 5em auto;
     text-align: center;
     position: relative;
 }
