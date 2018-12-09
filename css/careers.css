@@ -150,15 +150,23 @@ nav a {
     letter-spacing: 1px;
 }
 
+.top-of-page-nav li.is-active a {
+    text-decoration: underline;
+}
+
+.navigation-logo {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 12%;
+}
+
 .magnifying-glass {
     position: absolute;
     right: 4.5%;
     top: 45%;
     width: 1.2%;
-}
-
-.class {
-    text-decoration: underline;
 }
 
 /* start heading section */
@@ -182,7 +190,6 @@ nav a {
     position: absolute;
 }
 
-
 .header-nav {
     position: absolute;
     top: 0;
@@ -200,41 +207,25 @@ nav a {
 }
 
 .header-nav ul{
-    list-style-type: none;
     text-align: center;
+    list-style-type: none;
 }
 
 .header-nav li {
     padding: 1.5em 3.75em;
     display: inline-block;
     letter-spacing: 1px;
+    position: relative;
 }
 
-.main-heading-tagline {
+.white-triangle {
     position: absolute;
-    color: #fff;
-    left: 10em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.main-heading-tagline h1 {
-    font-weight: normal;
-    font-size: 2.5em;
-}
-
-.main-heading-tagline a {
-    color: #edb23b;
-    font-size: 1.25em;
-    text-decoration: none;
-    padding-bottom: .05em;
-    border-bottom: 1px solid #edb23b;
-}
-
-.main-heading-tagline a:hover {
-    color: #f7dca4;
-    border-bottom: 1px solid #f7dca4;
+    border: .9em solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    left: 9.5%;
+    top: 70%;
 }
 
 /* start newsletter section */
