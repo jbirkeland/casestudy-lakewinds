@@ -272,6 +272,10 @@ body {
     line-height: 2.75em;
 }
 
+.about-us-nav h2 {
+    display: none;
+}
+
 .about-us-nav ul {
     list-style-type: none;
     margin-left: 1em;
