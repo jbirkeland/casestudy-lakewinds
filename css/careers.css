@@ -115,13 +115,6 @@ body {
     margin: auto;
 }
 
-nav a {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    width: 100%;
-}
-
 .top-of-page-nav {
     position: relative;
     padding: 2.5em;
@@ -130,6 +123,9 @@ nav a {
 .top-of-page-nav a {
     color: #76743e;
     text-decoration: none;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 .top-of-page-nav a:hover {
@@ -199,6 +195,9 @@ nav a {
 .header-nav a {
     color: #fbfbfb;
     text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .header-nav a:hover {
@@ -226,6 +225,119 @@ nav a {
     border-right-color: transparent;
     left: 9.5%;
     top: 70%;
+}
+
+/* start main careers section */
+
+.main-body-container {
+    position: relative;
+}
+
+.fixed-social-icons {
+    position: sticky;
+    float: right;
+    margin: 3em 15px 0 0;
+}
+
+.fixed-social-icons ul {
+    list-style-type: none;
+}
+
+.fixed-social-icons li {
+    display: inline-block;
+    padding: .25em;
+}
+
+.fixed-social-icons li.share {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: .9em;
+    transform: translate(0,-25%);
+}
+
+.fixed-social-icons i {
+    font-size: 2em;
+    color: #76743e;
+}
+
+.fixed-social-icons i:hover {
+    color: #656536;
+}
+
+.about-us-nav {
+    float: left;
+    margin: 2.75em 0 0 15px;
+    font-size: .9em;
+    line-height: 2.75em;
+}
+
+.about-us-nav ul {
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.about-us-nav li {
+    font-family: 'Quicksand', sans-serif;
+    color: #514e40;
+}
+
+.about-us-li {
+    background-color: #e9e9e9;
+    padding: .7em 13em .7em 1em;
+}
+
+.about-us-li:hover {
+    text-decoration: underline;
+    border-left: 3.5px solid #514e40;
+    padding: .7em 13em .7em 1em;
+
+}
+
+.about-us-nav a {
+    text-decoration: none;
+    color: #514e40;
+    border-left: 3.5px solid #e9e9e9;
+    padding: .7em 0 .7em 1.5em;
+    width: 200px;
+}
+
+.about-us-nav a:hover {
+    text-decoration: underline;
+}
+
+.about-us-nav a.second {
+    padding: .7em 0 .7em 2.5em;
+    width: 200px;
+}
+
+.careers-li {
+    background-color: #88883b;
+    font-weight: lighter;
+    border-left: 3.5px solid #e9e9e9;
+    color: #fff;
+    padding: .7em 12.5em .7em 1.5em;
+}
+
+.careers-body {
+    margin: auto;
+    width: 550px;
+    color: #444;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+.careers-body h2 {
+    font-weight: normal;
+    font-size: 2.25em;
+    padding: 1.5em 0 1em;
+}
+
+.careers-body a {
+    color: #76743e;
+}
+
+.careers-body a:hover {
+    color: #656536;
 }
 
 /* start newsletter section */
@@ -314,7 +426,7 @@ footer {
     text-align: center;
     position: relative;
     line-height: 2em;
-    padding: 6em 3em;
+    padding: 3em 3em;
     color: #444;
 }
 
@@ -362,6 +474,8 @@ footer img {
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 .footer-nav a:hover {
